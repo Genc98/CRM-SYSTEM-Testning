@@ -1,0 +1,74 @@
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\appsettings.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\server.staticwebassets.endpoints.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\server.exe
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\server.deps.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\server.runtimeconfig.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\server.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\server.pdb
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\MailKit.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\MimeKit.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\Npgsql.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\server.csproj.AssemblyReference.cache
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\server.csproj.CoreCompileInputs.cache
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\server.sourcelink.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\scopedcss\bundle\server.styles.css
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\staticwebassets\msbuild.server.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\staticwebassets\msbuild.server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\staticwebassets\msbuild.build.server.props
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.server.props
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.server.props
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\server.csproj.Up2Date
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\server.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\refint\server.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\server.pdb
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\server.genruntimeconfig.cache
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\server\obj\Debug\net8.0\ref\server.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\appsettings.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\server.staticwebassets.endpoints.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\server.exe
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\server.deps.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\server.runtimeconfig.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\server.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\server.pdb
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\MailKit.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\MimeKit.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\Npgsql.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\server.csproj.AssemblyReference.cache
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\server.csproj.CoreCompileInputs.cache
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\server.sourcelink.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\scopedcss\bundle\server.styles.css
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\staticwebassets\msbuild.server.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\staticwebassets\msbuild.server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\staticwebassets\msbuild.build.server.props
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.server.props
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.server.props
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\server.csproj.Up2Date
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\server.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\refint\server.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\server.pdb
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\server.genruntimeconfig.cache
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\ref\server.dll

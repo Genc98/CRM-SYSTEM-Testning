@@ -28,16 +28,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\TicTacToe\TicTacToe.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
       <SpecFlowFeatureFiles Remove="Features\Example.feature" />
+      <SpecFlowFeatureFiles Remove="Features\ScenarioOutlineExample.feature" />
     </ItemGroup>
 
     <ItemGroup>
       <Compile Remove="Features\Example.feature.cs" />
       <Compile Remove="Steps\Example.cs" />
+      <Compile Remove="Steps\ScenarioOutlineExample.cs" />
     </ItemGroup>
 
 </Project>
