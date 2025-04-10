@@ -1,14 +1,44 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=95c2adef_002Df3ba_002D4ebc_002Daffe_002Df67c4b936964/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Accept cookies #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:SendForm.feature.cs&lt;/ProjectFile&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2ffed43b_002D0143_002D4884_002D8218_002Df7b57329bdf9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Send Forms" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::FD2CC74B-3B39-4E86-9987-4E513D25CC3A::net8.0::E2ETesting.Features.SendFormFeature.SendForms&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:LoginAgent.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:LoginAdmin.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:AddAgent.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:AgentList.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:DeleteAgent.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:RequestList.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:ServiceList.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:SendForm.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:ChangePassword.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:UpdateAgent.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:SendInChat.feature.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c58a7dbf_002D22c3_002D4ac9_002D848f_002D72704675d2db/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Accept cookies" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::FD2CC74B-3B39-4E86-9987-4E513D25CC3A::net8.0::E2ETesting.Features.SendFormFeature.AcceptCookies&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe39bc3e_002D6bee_002D4045_002D8ec5_002D69591b7d5ceb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Accept cookies #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::FD2CC74B-3B39-4E86-9987-4E513D25CC3A::net8.0::E2ETesting.Features.SendFormFeature.AcceptCookies&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5008c7c1_002D4272_002D47de_002D9e52_002Deaf3426655ba/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from SendForm.feature.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:SendForm.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:Login.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::FD2CC74B-3B39-4E86-9987-4E513D25CC3A::net8.0::E2ETesting.Features.LoginAgentFeature.Login&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::FD2CC74B-3B39-4E86-9987-4E513D25CC3A::net8.0::E2ETesting.Features.LoginAgentFeature&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::FD2CC74B-3B39-4E86-9987-4E513D25CC3A::net8.0::E2ETesting.Features.LoginAgentOrAgentFeature&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::FD2CC74B-3B39-4E86-9987-4E513D25CC3A::net8.0::E2ETesting.Features.DeleteAgentFeature&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::FD2CC74B-3B39-4E86-9987-4E513D25CC3A::net8.0::E2ETesting.Features.LoginAdminFeature.LoginAdmin&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::AB76B7A0-721B-4FD4-BC10-F656DFED9023::net8.0::Unittest.UnitTest1.Test1&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::AB76B7A0-721B-4FD4-BC10-F656DFED9023::net8.0::Unittest.UnitTest1.Agent_Constructor_Assigns_Values_Correctly&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::AB76B7A0-721B-4FD4-BC10-F656DFED9023::net8.0::Unittest.UnitTest1&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:RequestList.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:ChangePassword.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:LoginAdmin.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:AgentList.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:AddAgent.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:UpdateAgent.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:DeleteAgent.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:ServiceList.feature.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;FD2CC74B-3B39-4E86-9987-4E513D25CC3A/d:Features/f:SendInChat.feature.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
