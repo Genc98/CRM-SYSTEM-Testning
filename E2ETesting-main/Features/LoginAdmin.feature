@@ -1,7 +1,7 @@
 Feature: Login Admin
 Login as a admin
 
-    Scenario: Login as a Admin
+    Scenario Outline: Login as a Admin
         Given I am on the CRM system startpage
         When I click on login and will get to login page
         And I enter "<email>" as email 

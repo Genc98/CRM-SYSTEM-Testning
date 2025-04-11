@@ -110,7 +110,8 @@ public class CRMsteps
         await _page.ClickAsync($"text={role}");
     }
     
-    [When(@"I click login")]
+    //IF YOU LOG IN AS AGENT YOU WILL BE REDIRECTED TO DASHBOARD
+    [When(@"I click login as agent")]
     public async Task ThenIClickLogin()
     {
         await Task.WhenAll(
@@ -119,7 +120,6 @@ public class CRMsteps
         );
     }
     
-    //IF YOU ARE A AGENT YOU WILL BE REDIRECTED TO DASHBOARD
     [Then(@"I am on the dashboard")]
     public async Task ThenIAmOnTheDashboard()
     {
@@ -130,7 +130,7 @@ public class CRMsteps
 
     }
     
-    //IF YOU ARE A ADMIN YOU WILL BE REDIRECTED TO ADMINPAGE
+    //IF YOU LOG IN AS ADMIN YOU WILL BE REDIRECTED TO ADMINPAGE
     [When(@"I click login as admin")]
     public async Task WhenIClickLoginAsAdmin()
     {
@@ -171,13 +171,13 @@ public class CRMsteps
     [When(@"I see the requests I will press join chat")]
     public async Task WhenISeeTheRequestsIWillPressJoinChat()
     {
-        await Task.WhenAll(
-            _page.WaitForURLAsync("http://localhost:4000/chat/*"),
-            _page.ClickAsync("button:has-text('Join')"));
+        
+        await _page.WaitForSelectorAsync("tr:has-text('Väckarklocka med LED-display')");
+        await _page.ClickAsync("tr:has-text('Väckarklocka med LED-display') button:has-text('Join')");
         
     }
 
-    [Then(@"I will se a chat for specific request")]
+    [When(@"I will se a chat for specific request")]
     public async Task ThenIWillSeAChatForSpecificRequest()
     {
         var heading = await _page.InnerTextAsync("h4");
@@ -221,8 +221,9 @@ public class CRMsteps
         Assert.Equal("You changed your password!", heading);
 
     }
-    //Man kan ändra på raderade
     
+    
+    //TEST ADMIN WORKFLOW
     [Given(@"I am logged in as admin and I am in the adminpage")]
     public async Task GivenIAmLoggedInAsAdminAndIAmInTheAdminpagen()
     {
@@ -247,7 +248,9 @@ public class CRMsteps
         var heading = await _page.InnerTextAsync("h2");
         Assert.Equal("Add Agent", heading);
     }
-
+    
+     
+    //TEST IF ADMIN CAN ADD AN AGENT
     [Given(@"I am logged in as admin and I am in the agentlist")]
     public async Task GivenIAmLoggedInAsAdminAndIAmInTheAgentlist()
     {
@@ -277,8 +280,7 @@ public class CRMsteps
     {
         await _page.FillAsync("input[placeholder='Enter agent password']", password);
     }
-
-
+    
     [Then(@"I will click Add and the new agent will show up")]
     public async Task ThenIWillClickAddAndTheNewAgentWillShowUp()
     {
@@ -286,24 +288,40 @@ public class CRMsteps
         await _page.WaitForSelectorAsync("tbody tr");
 
     }
-
+    
+    //TEST IF ADMIN CAN EDIT AGENT DATA
     [When(@"I press the edit button for specific agent")]
     public async Task WhenIPressTheEditButtonForSpecificAgent()
     {
-        await _page.WaitForSelectorAsync("tr:has-text('Johanna')");
-        await _page.ClickAsync("tr:has-text('Johanna') .edit-button");
+        await _page.WaitForSelectorAsync("tr:has-text('Elif')");
+        await _page.ClickAsync("tr:has-text('Elif') .edit-button");
+    }
+    
+    [Then(@"I want update an agents data to '(.*)','(.*)','(.*)', '(.*)' as press save")]
+    public async Task ThenIWantUpdateAnAgentsDataToAsPressSave(string newFirstname, string newLastname, string newEmail, string newPassword)
+    {
+        await _page.WaitForSelectorAsync(".EditArea");
+
+        await _page.FillAsync("input[value='Elif']", newFirstname);
+        await _page.FillAsync("input[value='Berisha']", newLastname);
+        await _page.FillAsync("input[value='Elif_B@hotmail.com']", newEmail);
+        await _page.FillAsync("input[value='12345678']", newPassword);
+
+        await _page.ClickAsync(".save-button");
+
     }
 
-
+    //TEST IF ADMIN CAN DELETE AN AGENT
     [Then(@"I press the delete button for specific agent")]
     public async Task WhenIPressTheDeleteButtonForSpecificAgent()
     {
         
-        await _page.WaitForSelectorAsync("tr:has-text('Elif')");
-        await _page.ClickAsync("tr:has-text('Elif') .delete-button");
+        await _page.WaitForSelectorAsync("tr:has-text('ann@gmail.com')");
+        await _page.ClickAsync("tr:has-text('ann@gmail.com') .delete-button");
         
     }
-
+    
+    //TEST IF ADMIN CAN SE ALL HANDLED AND UNHANDLED REQUESTS AND DELETE ONE
     [When(@"I click the navbar and I click on list and see the list")]
     public async Task WhenIClickTheNavbarAndIClickOnList()
     {
@@ -318,14 +336,16 @@ public class CRMsteps
     [Then(@"I click on delete to remove a handled ärende")]
     public async Task ThenIClickOnDeleteToRemoveAHandledArende()
     {
-        await _page.WaitForSelectorAsync("tr:has-text('Glasögon')");
-        await _page.ClickAsync("tr:has-text('Glasögon') button:has-text('Delete')");
+        await _page.WaitForSelectorAsync("tr:has-text('Halsband')");
+        await _page.ClickAsync("tr:has-text('Halsband') button:has-text('Delete')");
     }
-
+    
+    
+    //TEST IF YOU CAN SE A MESSAGE AND IF YOU CAN SEND A MESSAGE IN CHAT.
     [Given(@"I am on the Chat as a agent or customer")]
     public async Task GivenIAmOnTheChatAsAAgentOrCustomer()
     {
-        await _page.GotoAsync("http://localhost:4000/chat/5fa07441-0f2b-4069-8f20-3dc2ad3f9fc1");
+        await _page.GotoAsync("http://localhost:4000/chat/35ae9a4e-7e6d-4502-8473-a136177b84e6");
     }
 
     [When(@"I enter ""(.*)"" as my username")]
@@ -345,5 +365,7 @@ public class CRMsteps
     {
         await _page.ClickAsync("button:has-text('Send')");
     }
-    
+
+
+   
 }
