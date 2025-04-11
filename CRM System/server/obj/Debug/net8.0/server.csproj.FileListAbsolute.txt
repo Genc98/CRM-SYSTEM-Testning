@@ -72,3 +72,4 @@ C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM Syste
 C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\server.pdb
 C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\server.genruntimeconfig.cache
 C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\obj\Debug\net8.0\ref\server.dll
+C:\Users\genc-\Downloads\Desktop\Skola\6. Testning\CRM-SYSTEM-Testning\CRM System\server\bin\Debug\net8.0\server.staticwebassets.runtime.json

@@ -1,12 +1,331 @@
 {
   "Version": 1,
-  "Hash": "cGifSLNzTzd2u7nwRViX9XSIdpfM/PZJ54btAXk9aTI=",
+  "Hash": "vdhghf87/1DfWwVrVD1olrtYBildZtnpmhDTSeRSNNU=",
   "Source": "server",
   "BasePath": "_content/server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "server\\wwwroot",
+      "Source": "server",
+      "ContentRoot": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\",
+      "BasePath": "_content/server",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\assets\\index-CFtO4dP7.css",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\",
+      "BasePath": "_content/server",
+      "RelativePath": "assets/index-CFtO4dP7#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v9mofonehs",
+      "Integrity": "PbpbdYEHzGn2yEGj6WN69Tx2qeQbCOOdDRd95B9RxEw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-CFtO4dP7.css"
+    },
+    {
+      "Identity": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\assets\\index-CX4YShda.js",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\",
+      "BasePath": "_content/server",
+      "RelativePath": "assets/index-CX4YShda#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k95geogts4",
+      "Integrity": "WBPkkxIAJfPCKTNUM01GYuOagj31Pjbu6pO42DP6w9Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-CX4YShda.js"
+    },
+    {
+      "Identity": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\index.html",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\",
+      "BasePath": "_content/server",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6fhi4y95m7",
+      "Integrity": "TrsRzOS8DuHDGZfSXhPVdT8RYqQDQugGJJu54g5jYkI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "assets/index-CFtO4dP7.css",
+      "AssetFile": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\assets\\index-CFtO4dP7.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PbpbdYEHzGn2yEGj6WN69Tx2qeQbCOOdDRd95B9RxEw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 11:37:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PbpbdYEHzGn2yEGj6WN69Tx2qeQbCOOdDRd95B9RxEw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-CFtO4dP7.v9mofonehs.css",
+      "AssetFile": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\assets\\index-CFtO4dP7.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PbpbdYEHzGn2yEGj6WN69Tx2qeQbCOOdDRd95B9RxEw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 11:37:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v9mofonehs"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-CFtO4dP7.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PbpbdYEHzGn2yEGj6WN69Tx2qeQbCOOdDRd95B9RxEw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-CX4YShda.js",
+      "AssetFile": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\assets\\index-CX4YShda.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "343245"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WBPkkxIAJfPCKTNUM01GYuOagj31Pjbu6pO42DP6w9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 11:37:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WBPkkxIAJfPCKTNUM01GYuOagj31Pjbu6pO42DP6w9Q="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-CX4YShda.k95geogts4.js",
+      "AssetFile": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\assets\\index-CX4YShda.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "343245"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WBPkkxIAJfPCKTNUM01GYuOagj31Pjbu6pO42DP6w9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 11:37:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k95geogts4"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-CX4YShda.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WBPkkxIAJfPCKTNUM01GYuOagj31Pjbu6pO42DP6w9Q="
+        }
+      ]
+    },
+    {
+      "Route": "index.6fhi4y95m7.html",
+      "AssetFile": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TrsRzOS8DuHDGZfSXhPVdT8RYqQDQugGJJu54g5jYkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 11:37:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6fhi4y95m7"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TrsRzOS8DuHDGZfSXhPVdT8RYqQDQugGJJu54g5jYkI="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\genc-\\Downloads\\Desktop\\Skola\\6. Testning\\CRM-SYSTEM-Testning\\CRM System\\server\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TrsRzOS8DuHDGZfSXhPVdT8RYqQDQugGJJu54g5jYkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 11:37:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TrsRzOS8DuHDGZfSXhPVdT8RYqQDQugGJJu54g5jYkI="
+        }
+      ]
+    }
+  ]
 }

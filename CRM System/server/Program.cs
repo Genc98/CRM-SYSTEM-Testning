@@ -10,6 +10,10 @@ builder.Services.AddSingleton<EmailService>();
 
 var app = builder.Build();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+app.MapFallbackToFile("index.html");
+
 Database database = new Database();
 NpgsqlDataSource db = database.Connection();
 
