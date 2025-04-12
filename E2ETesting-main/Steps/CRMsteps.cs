@@ -34,7 +34,7 @@ public class CRMsteps
     // STEPS:
     
     
-    //SEND FORM AS A CUSTOMER TEST
+    //TEST SEND FORM AS A CUSTOMER 
     
     [Given(@"I am on the CRM system startpage")]
     public async Task GivenIAmOnTheCrmSystemStartpage()
