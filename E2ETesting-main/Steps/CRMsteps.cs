@@ -185,7 +185,7 @@ public class CRMsteps
     }
     
     
-    //TEST CHANGEPASSWORD FOR NEW AGENTS
+    //TEST CHANGE PASSWORD FOR NEW AGENTS
     [Given(@"I am a new agent and I am on the change password page that i recived from my email")]
     public async Task GivenIAmANewAgentAndIAmOnTheChangePasswordPageThatIRecivedFromMyEmail()
     {
@@ -222,8 +222,6 @@ public class CRMsteps
 
     }
     
-    
-    //TEST ADMIN WORKFLOW
     [Given(@"I am logged in as admin and I am in the adminpage")]
     public async Task GivenIAmLoggedInAsAdminAndIAmInTheAdminpagen()
     {
