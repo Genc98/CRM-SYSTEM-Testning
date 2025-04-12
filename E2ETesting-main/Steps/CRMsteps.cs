@@ -19,7 +19,7 @@ public class CRMsteps
     public async Task Setup()
     {
         _playwright = await Playwright.CreateAsync();
-        _browser = await _playwright.Chromium.LaunchAsync(new() {Headless = true});
+        _browser = await _playwright.Chromium.LaunchAsync(new() { Headless = false, SlowMo = 500 });
         _context = await _browser.NewContextAsync();
         _page = await _context.NewPageAsync();
     }
