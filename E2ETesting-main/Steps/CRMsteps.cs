@@ -110,7 +110,7 @@ public class CRMsteps
         await _page.ClickAsync($"text={role}");
     }
     
-    //IF YOU LOG IN AS AGENT YOU WILL BE REDIRECTED TO DASHBOARD
+    //IF YOU LOG IN AS AGENT YOU WILL BE REDIRECTED TO the DASHBOARD
     [When(@"I click login as agent")]
     public async Task ThenIClickLogin()
     {
