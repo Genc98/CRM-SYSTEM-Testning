@@ -39,7 +39,7 @@ public class CRMsteps
     [Given(@"I am on the CRM system startpage")]
     public async Task GivenIAmOnTheCrmSystemStartpage()
     {
-        await _page.GotoAsync("http://localhost:4000/");
+        await _page.GotoAsync("http://localhost:3000/");
         // await _page.WaitForTimeoutAsync(3000);
     }
     
@@ -66,7 +66,7 @@ public class CRMsteps
     {
 
         await Task.WhenAll(
-            _page.WaitForURLAsync("http://localhost:4000/confirmation"),
+            _page.WaitForURLAsync("http://localhost:3000/confirmation"),
             _page.ClickAsync(".sendBtn")
         );
     }
@@ -86,7 +86,7 @@ public class CRMsteps
     public async Task WhenIClickOnLoginAndWillGetToLoginPage()
     {
         await Task.WhenAll(
-            _page.WaitForURLAsync("http://localhost:4000/login"),
+            _page.WaitForURLAsync("http://localhost:3000/login"),
             _page.ClickAsync(".logInBtn")
         );
     }
@@ -115,7 +115,7 @@ public class CRMsteps
     public async Task ThenIClickLogin()
     {
         await Task.WhenAll(
-            _page.WaitForURLAsync("http://localhost:4000/dashboard"),
+            _page.WaitForURLAsync("http://localhost:3000/dashboard"),
             _page.ClickAsync(".sendBtn")
         );
     }
@@ -135,7 +135,7 @@ public class CRMsteps
     public async Task WhenIClickLoginAsAdmin()
     {
         await Task.WhenAll(
-            _page.WaitForURLAsync("http://localhost:4000/adminPage"),
+            _page.WaitForURLAsync("http://localhost:3000/adminPage"),
             _page.ClickAsync(".sendBtn")
         );
     }
@@ -153,7 +153,7 @@ public class CRMsteps
     [Given(@"I am logged in as agent and am in the dashboard")]
     public async Task GivenIAmLoggedInAsAgentAndAmInTheDashboard()
     {
-        await _page.GotoAsync("http://localhost:4000/dashboard");
+        await _page.GotoAsync("http://localhost:3000/dashboard");
     }
 
     [When(@"I click the navbar and I click requests")]
@@ -189,7 +189,7 @@ public class CRMsteps
     [Given(@"I am a new agent and I am on the change password page that i recived from my email")]
     public async Task GivenIAmANewAgentAndIAmOnTheChangePasswordPageThatIRecivedFromMyEmail()
     {
-        await _page.GotoAsync("http://localhost:4000/changepassword");
+        await _page.GotoAsync("http://localhost:3000/changepassword");
     }
 
     [When(@"I enter ""(.*)"" as existing email")]
@@ -227,7 +227,7 @@ public class CRMsteps
     [Given(@"I am logged in as admin and I am in the adminpage")]
     public async Task GivenIAmLoggedInAsAdminAndIAmInTheAdminpagen()
     {
-        await _page.GotoAsync("http://localhost:4000/adminPage");
+        await _page.GotoAsync("http://localhost:3000/adminPage");
     }
 
     [When(@"I click the navbar and I click on agentlist")]
@@ -254,7 +254,7 @@ public class CRMsteps
     [Given(@"I am logged in as admin and I am in the agentlist")]
     public async Task GivenIAmLoggedInAsAdminAndIAmInTheAgentlist()
     {
-        await _page.GotoAsync("http://localhost:4000/agentslist");
+        await _page.GotoAsync("http://localhost:3000/agentslist");
     }
 
     [When(@"I enter ""(.*)"" as agents firstname")]
@@ -345,7 +345,7 @@ public class CRMsteps
     [Given(@"I am on the Chat as a agent or customer")]
     public async Task GivenIAmOnTheChatAsAAgentOrCustomer()
     {
-        await _page.GotoAsync("http://localhost:4000/chat/35ae9a4e-7e6d-4502-8473-a136177b84e6");
+        await _page.GotoAsync("http://localhost:3000/chat/35ae9a4e-7e6d-4502-8473-a136177b84e6");
     }
 
     [When(@"I enter ""(.*)"" as my username")]
