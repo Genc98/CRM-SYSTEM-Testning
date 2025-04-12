@@ -17,12 +17,12 @@ jobs:
       - name: Install dotnet project dependencies
         run: dotnet restore
       - name: Build/Restore Playwright Project
-        run: cd E2ETesting && dotnet build
+        run: dotnet build E2ETesting/E2ETesting.csproj
       - name: Ensure browsers are installed
-        run: cd E2ETesting && pwsh bin/Debug/net8.0/playwright.ps1 install --with-deps
+        run: pwsh E2ETesting/bin/Debug/net8.0/playwright.ps1 install --with-deps
       - name: Start server
         run: cd server && nohup dotnet run &
       - name: Run GUI-tests
-        run: cd  E2ETesting && dotnet test
+        run: dotnet test E2ETesting/E2ETesting.csproj
 
  
