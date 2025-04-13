@@ -27,7 +27,7 @@ jobs:
       - name: Start Server
         run: cd "CRM System/server" && nohup dotnet run --project server.csproj &
       - name: Run API-Tests
-        run: newman run ./api-tester/Tests For CRM System.postman_collection
+        run: newman run "./api-tester/Tests For CRM System.postman_collection.json"
 
   gui_tests:
     runs-on: ubuntu-latest
