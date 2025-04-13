@@ -291,21 +291,28 @@ public class CRMsteps
     [When(@"I press the edit button for specific agent")]
     public async Task WhenIPressTheEditButtonForSpecificAgent()
     {
-        await _page.WaitForSelectorAsync("tr:has-text('Elif')");
-        await _page.ClickAsync("tr:has-text('Elif') .edit-button");
+        await _page.WaitForSelectorAsync("tr:has-text('Mary')");
+        await _page.ClickAsync("tr:has-text('Mary') .edit-button");
     }
     
     [Then(@"I want update an agents data to '(.*)','(.*)','(.*)', '(.*)' as press save")]
     public async Task ThenIWantUpdateAnAgentsDataToAsPressSave(string newFirstname, string newLastname, string newEmail, string newPassword)
     {
+        var editForm = await _page.QuerySelectorAsync(".EditArea");
         await _page.WaitForSelectorAsync(".EditArea");
 
-        await _page.FillAsync("input[value='Elif']", newFirstname);
-        await _page.FillAsync("input[value='Berisha']", newLastname);
-        await _page.FillAsync("input[value='Elif_B@hotmail.com']", newEmail);
-        await _page.FillAsync("input[value='12345678']", newPassword);
+        var firstname =  await editForm.QuerySelectorAsync("input[name='firstName']");
+        var lastname = await editForm.QuerySelectorAsync("input[name='lastName']");
+        var email = await editForm.QuerySelectorAsync("input[name='email']");
+        var password = await editForm.QuerySelectorAsync("input[name='password']");
 
-        await _page.ClickAsync(".save-button");
+        await firstname.FillAsync(newFirstname);
+        await lastname.FillAsync(newLastname);
+        await email.FillAsync(newEmail);
+        await password.FillAsync(newPassword);
+
+        var saveButton = await editForm.QuerySelectorAsync(".save-button");
+        await saveButton.ClickAsync();
 
     }
 
@@ -334,8 +341,8 @@ public class CRMsteps
     [Then(@"I click on delete to remove a handled ärende")]
     public async Task ThenIClickOnDeleteToRemoveAHandledArende()
     {
-        await _page.WaitForSelectorAsync("tr:has-text('Halsband')");
-        await _page.ClickAsync("tr:has-text('Halsband') button:has-text('Delete')");
+        await _page.WaitForSelectorAsync("tr:has-text('Bärbar AC')");
+        await _page.ClickAsync("tr:has-text('Bärbar AC') button:has-text('Delete')");
     }
     
     
@@ -363,7 +370,5 @@ public class CRMsteps
     {
         await _page.ClickAsync("button:has-text('Send')");
     }
-
-
-   
+    
 }
