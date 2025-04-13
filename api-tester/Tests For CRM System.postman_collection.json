@@ -1,0 +1,712 @@
+{
+	"info": {
+		"_postman_id": "c1a80f05-c965-41dc-9b75-7bd348b930ed",
+		"name": "Tests For CRM System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43523509"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Send Form",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"let data = pm.response.json();\r",
+									"pm.environment.set(\"token\", data.token);\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"lollo@gmail.com\",\r\n    \"service_product\": \"Golvlampa\",\r\n    \"message\": \"Hej, jag undrar om lampan har justerbar ljusstyrka? Tack på förhand!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/forms",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"forms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Message",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.environment.get(\"token\");\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Henrik\",\r\n    \"message\":\"Hej, jag undrade tidigare om golvlampan har justerbar ljusstyrka och om den är dimbar?\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/chat/{{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"chat",
+								"{{token}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Messages",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Result is array\", function () {\r",
+									"    pm.response.to.have.jsonBody([]);\r",
+									"    pm.expect(Array.isArray(pm.response.json())).to.be.true;\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/messages/{{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"messages",
+								"{{token}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "- **Send Form** : Kunden skickar in ett formulär.\n    \n- **Send Message:** Kunden skriver in sitt visningnamn och medelande och skickar in det i chatten.\n    \n- **Get Message:** Kunden kan se alla meddelanden i chatten."
+		},
+		{
+			"name": "Agent",
+			"item": [
+				{
+					"name": "Login Agent",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"valllle25@gmail.com\",\r\n    \"password\":\"hej123\",\r\n    \"role\":\"agent\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all forms",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Result is array\", function () {\r",
+									"    pm.response.to.have.jsonBody([]);\r",
+									"    pm.expect(Array.isArray(pm.response.json())).to.be.true;\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/formlist",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"formlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Messages",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Result is array\", function () {\r",
+									"    pm.response.to.have.jsonBody([]);\r",
+									"    pm.expect(Array.isArray(pm.response.json())).to.be.true;\r",
+									"});\r",
+									"\r",
+									"pm.environment.get(\"token\", data.token);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/messages/{{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"messages",
+								"{{token}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Message",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Valerie\",\r\n    \"message\":\"Hej\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/chat/{{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"chat",
+								"{{token}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"valllle25@gmail.com\",\r\n    \"newPassword\":\"hello123\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/agents/password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"agents",
+								"password"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "- **Login Agent:** En kundtjänstmedarbetare loggar in i systemet.\n    \n- **Get all forms:** En kundtjänstmedarbetare kan se en lista på alla inskickade formulär.\n    \n- **Send Message:** Kundtjänstmedarbetaren skriver in sitt visningnamn och medelande och skickar in det i chatten.\n    \n- **Get Message:** Kunden kan se alla meddelanden i chatten."
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Login Admin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"admin1@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"role\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Agents",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Result is array\", function () {\r",
+									"    pm.response.to.have.jsonBody([]);\r",
+									"    pm.expect(Array.isArray(pm.response.json())).to.be.true;\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/agents",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"agents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Agent",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\":\"Ted\",\r\n    \"lastname\":\"Riley\",\r\n    \"email\": \"Ted@gmail.com\",\r\n    \"password\":\"11114444\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/agents",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"agents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Agent",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstname\": \"Teddy\",\r\n  \"lastname\": \"Riley\",\r\n  \"email\": \"teddy@gmail.com\",\r\n  \"password\": \"11118888\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/agents/4",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"agents",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Agent",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/agents/9",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"agents",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Service List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/service_list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"service_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/service_list/6",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"service_list",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Messages",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/messages/{{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"messages",
+								"{{token}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "- **Login Admin:** En admin loggar in i systemet.\n    \n- **Get All Agents:** En admin kan se en lista på alla sina kundtjänstmedarbetare.\n    \n- **Add Agent:** En admin kan lägga till en kundtjänstmedarbetare.\n    \n- **Update Agent:** En admin kan uppdatera en kundtjänstmedarbetares användaruppgifter.\n    \n- **Delete Agent:** En admin kan uppdatera en kundtjänstmedarbetares användaruppgifter.\n    \n- **Get Service List:** En admin kan se en lista på hanterade ärenden.\n    \n- **Delete Service:** En admin kan radera ett hanterat ärende.\n    \n- **Get Messages:** Admin har tillgång till chatterna."
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
