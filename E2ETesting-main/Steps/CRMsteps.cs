@@ -317,12 +317,12 @@ public class CRMsteps
     }
 
     //TEST IF ADMIN CAN DELETE AN AGENT
-    [Then(@"I press the delete button for specific agent")]
-    public async Task WhenIPressTheDeleteButtonForSpecificAgent()
+    [Then(@"I press the delete button for specific agent with email '(.*)'")]
+    public async Task WhenIPressTheDeleteButtonForSpecificAgentWithEmail(string email)
     {
         
-        await _page.WaitForSelectorAsync("tr:has-text('bob@gmail.com')");
-        await _page.ClickAsync("tr:has-text('bob@gmail.com') .delete-button");
+        await _page.WaitForSelectorAsync($"tr:has-text('{email}')");
+        await _page.ClickAsync($"tr:has-text('{email}') .delete-button");
         
     }
     
@@ -338,12 +338,13 @@ public class CRMsteps
         );
     }
 
-    [Then(@"I click on delete to remove a handled ärende")]
-    public async Task ThenIClickOnDeleteToRemoveAHandledArende()
+    [Then(@"I click on delete to remove a handled ärende for ""(.*)""")]
+    public async Task ThenIClickOnDeleteToRemoveAHandledArende(string productName)
     {
-        await _page.WaitForSelectorAsync("tr:has-text('Robotdammsugare')");
-        await _page.ClickAsync("tr:has-text('Robotdammsugare') button:has-text('Delete')");
+        await _page.WaitForSelectorAsync($"tr:has-text('{productName}')");
+        await _page.ClickAsync($"tr:has-text('{productName}') button:has-text('Delete')");
     }
+
     
     
     //TEST IF YOU CAN SE A MESSAGE AND IF YOU CAN SEND A MESSAGE IN CHAT.
@@ -370,5 +371,7 @@ public class CRMsteps
     {
         await _page.ClickAsync("button:has-text('Send')");
     }
+    
+    
     
 }
