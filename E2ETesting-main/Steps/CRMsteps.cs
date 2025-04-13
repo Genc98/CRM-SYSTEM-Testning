@@ -172,8 +172,8 @@ public class CRMsteps
     public async Task WhenISeeTheRequestsIWillPressJoinChat()
     {
         
-        await _page.WaitForSelectorAsync("tr:has-text('Väckarklocka med LED-display')");
-        await _page.ClickAsync("tr:has-text('Väckarklocka med LED-display') button:has-text('Join')");
+        await _page.WaitForSelectorAsync("tr:has-text('Robotdammsugare')");
+        await _page.ClickAsync("tr:has-text('Robotdammsugare') button:has-text('Join')");
         
     }
 
@@ -291,8 +291,8 @@ public class CRMsteps
     [When(@"I press the edit button for specific agent")]
     public async Task WhenIPressTheEditButtonForSpecificAgent()
     {
-        await _page.WaitForSelectorAsync("tr:has-text('Mary')");
-        await _page.ClickAsync("tr:has-text('Mary') .edit-button");
+        await _page.WaitForSelectorAsync("tr:has-text('Bob')");
+        await _page.ClickAsync("tr:has-text('Bob') .edit-button");
     }
     
     [Then(@"I want update an agents data to '(.*)','(.*)','(.*)', '(.*)' as press save")]
@@ -321,8 +321,8 @@ public class CRMsteps
     public async Task WhenIPressTheDeleteButtonForSpecificAgent()
     {
         
-        await _page.WaitForSelectorAsync("tr:has-text('ann@gmail.com')");
-        await _page.ClickAsync("tr:has-text('ann@gmail.com') .delete-button");
+        await _page.WaitForSelectorAsync("tr:has-text('bob@gmail.com')");
+        await _page.ClickAsync("tr:has-text('bob@gmail.com') .delete-button");
         
     }
     
@@ -341,8 +341,8 @@ public class CRMsteps
     [Then(@"I click on delete to remove a handled ärende")]
     public async Task ThenIClickOnDeleteToRemoveAHandledArende()
     {
-        await _page.WaitForSelectorAsync("tr:has-text('Bärbar AC')");
-        await _page.ClickAsync("tr:has-text('Bärbar AC') button:has-text('Delete')");
+        await _page.WaitForSelectorAsync("tr:has-text('Robotdammsugare')");
+        await _page.ClickAsync("tr:has-text('Robotdammsugare') button:has-text('Delete')");
     }
     
     
@@ -350,7 +350,7 @@ public class CRMsteps
     [Given(@"I am on the Chat as a agent or customer")]
     public async Task GivenIAmOnTheChatAsAAgentOrCustomer()
     {
-        await _page.GotoAsync("http://localhost:3000/chat/35ae9a4e-7e6d-4502-8473-a136177b84e6");
+        await _page.GotoAsync("http://localhost:3000/chat/1c0fc44d-7eb1-4630-b5fa-3e1e8d699fe9");
     }
 
     [When(@"I enter ""(.*)"" as my username")]

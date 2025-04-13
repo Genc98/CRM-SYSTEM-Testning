@@ -14,5 +14,5 @@ Login as a agent
     Examples:
       | email                 | password | role  |
       | valllle25@gmail.com   | hej123   | agent |
-      | LarsLarsson@gmail.com | lars111  | agent |
+      | LarsLarsson@gmail.com | 12345678  | agent |
       
