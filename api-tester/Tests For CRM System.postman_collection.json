@@ -22,8 +22,8 @@
 									"\r",
 									"\r",
 									"\r",
-									"let data = pm.response.json();\r",
-									"pm.collectionVariables.set(\"token\", data.token);\r",
+									"let responseData = pm.response.json();\r",
+									"pm.collectionVariables.set(\"token\", responseData.token);\r",
 									""
 								],
 								"type": "text/javascript",
@@ -261,7 +261,7 @@
 									"    pm.expect(Array.isArray(pm.response.json())).to.be.true;\r",
 									"});\r",
 									"\r",
-									"pm.environment.get(\"token\", data.token);"
+									"let token = pm.collectionVariables.get(\"token\");"
 								],
 								"type": "text/javascript",
 								"packages": {}
