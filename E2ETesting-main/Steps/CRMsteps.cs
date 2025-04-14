@@ -291,8 +291,8 @@ public class CRMsteps
     [When(@"I press the edit button for specific agent")]
     public async Task WhenIPressTheEditButtonForSpecificAgent()
     {
-        await _page.WaitForSelectorAsync("tr:has-text('Bob')");
-        await _page.ClickAsync("tr:has-text('Bob') .edit-button");
+        await _page.WaitForSelectorAsync("tr:has-text('Ted')");
+        await _page.ClickAsync("tr:has-text('Ted') .edit-button");
     }
     
     [Then(@"I want update an agents data to '(.*)','(.*)','(.*)', '(.*)' as press save")]

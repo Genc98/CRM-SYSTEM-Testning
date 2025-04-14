@@ -12,7 +12,7 @@ Login as a agent
          
          
     Examples:
-      | email                 | password | role  |
-      | valllle25@gmail.com   | hej123   | agent |
-      | LarsLarsson@gmail.com | 12345678  | agent |
+      | email               | password | role  |
+      | valllle25@gmail.com | hej123   | agent |
+      | Sara@gmail.com      | sara123  | agent |
       
