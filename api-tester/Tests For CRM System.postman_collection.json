@@ -23,7 +23,7 @@
 									"\r",
 									"\r",
 									"let data = pm.response.json();\r",
-									"pm.environment.set(\"token\", data.token);\r",
+									"pm.collectionVariables.set(\"token\", data.token);\r",
 									""
 								],
 								"type": "text/javascript",
@@ -46,7 +46,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"lollo@gmail.com\",\r\n    \"service_product\": \"Golvlampa\",\r\n    \"message\": \"Hej, jag undrar om lampan har justerbar ljusstyrka? Tack på förhand!\"\r\n}",
+							"raw": "{\r\n    \"email\":\"Zara@gmail.com\",\r\n    \"service_product\": \"Mobilhållare\",\r\n    \"message\": \"Hej, mobilhållaren jag köpte sitter inte fast ordentligt i bilen och lossnar hela tiden. Finns det något jag kan göra eller kan jag byta den?\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -100,7 +100,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"Henrik\",\r\n    \"message\":\"Hej, jag undrade tidigare om golvlampan har justerbar ljusstyrka och om den är dimbar?\"\r\n}",
+							"raw": "{\r\n    \"username\": \"Zara\",\r\n    \"message\":\"Hej! Min mobilhållare lossnar hela tiden i bilen. Kan jag byta den?\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -135,7 +135,9 @@
 									"pm.test(\"Result is array\", function () {\r",
 									"    pm.response.to.have.jsonBody([]);\r",
 									"    pm.expect(Array.isArray(pm.response.json())).to.be.true;\r",
-									"});"
+									"});\r",
+									"\r",
+									"let token = pm.collectionVariables.get(\"token\");"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -186,7 +188,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"valllle25@gmail.com\",\r\n    \"password\":\"hej123\",\r\n    \"role\":\"agent\"\r\n}",
+							"raw": "{\r\n    \"email\":\"valllle25@gmail.com\",\r\n    \"password\":\"hello123\",\r\n    \"role\":\"agent\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -314,7 +316,7 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									""
+									"let token = pm.collectionVariables.get(\"token\");"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -326,7 +328,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"Valerie\",\r\n    \"message\":\"Hej\"\r\n}",
+							"raw": "{\r\n    \"username\": \"Valerie\",\r\n    \"message\":\"Hej! Självklart kan vi hjälpa dig med det. Skicka gärna ditt ordernummer så ser vi vad vi kan göra.\"\r\n}\r\n\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -368,7 +370,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"valllle25@gmail.com\",\r\n    \"newPassword\":\"hello123\"\r\n\r\n}",
+							"raw": "{\r\n    \"email\":\"Ted@gmail.com\",\r\n    \"newPassword\":\"hello\"\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -496,7 +498,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"firstname\":\"Ted\",\r\n    \"lastname\":\"Riley\",\r\n    \"email\": \"Ted@gmail.com\",\r\n    \"password\":\"11114444\"\r\n}",
+							"raw": "{\r\n    \"firstname\":\"Molly\",\r\n    \"lastname\":\"Granberg\",\r\n    \"email\": \"molly@gmail.com\",\r\n    \"password\":\"11114444\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -537,7 +539,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"firstname\": \"Teddy\",\r\n  \"lastname\": \"Riley\",\r\n  \"email\": \"teddy@gmail.com\",\r\n  \"password\": \"11118888\"\r\n}",
+							"raw": "{\r\n  \"firstname\": \"Ville\",\r\n  \"lastname\": \"Riley\",\r\n  \"email\": \"teddy@gmail.com\",\r\n  \"password\": \"11118888\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -578,14 +580,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/agents/9",
+							"raw": "{{base_url}}/api/agents/12",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"agents",
-								"9"
+								"12"
 							]
 						}
 					},
@@ -652,7 +654,8 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
-									""
+									"\r",
+									"let token = pm.collectionVariables.get(\"token\");"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -706,6 +709,11 @@
 		{
 			"key": "base_url",
 			"value": "http://localhost:3000",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
 			"type": "string"
 		}
 	]
