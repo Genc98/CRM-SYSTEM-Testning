@@ -13,6 +13,6 @@ Login as a agent
          
     Examples:
       | email               | password | role  |
-      | valllle25@gmail.com | hej123   | agent |
+      | valllle25@gmail.com | hello123   | agent |
       | Sara@gmail.com      | sara123  | agent |
       
