@@ -64,9 +64,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: | 
-            cd /srv/www/malmo/genc # första gången
             cd /srv/www/malmo/genc/CRM-SYSTEM-Testning # andra gången 
-            git clone https://github.com/Genc98/CRM-SYSTEM-Testning.git # första gången
             git pull # andra gången
 
     
