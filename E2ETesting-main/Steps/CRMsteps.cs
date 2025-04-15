@@ -172,8 +172,8 @@ public class CRMsteps
     public async Task WhenISeeTheRequestsIWillPressJoinChat()
     {
         
-        await _page.WaitForSelectorAsync("tr:has-text('Robotdammsugare')");
-        await _page.ClickAsync("tr:has-text('Robotdammsugare') button:has-text('Join')");
+        await _page.WaitForSelectorAsync("tr:has-text('Vattenflaska')");
+        await _page.ClickAsync("tr:has-text('Vattenflaska') button:has-text('Join')");
         
     }
 
@@ -351,7 +351,7 @@ public class CRMsteps
     [Given(@"I am on the Chat as a agent or customer")]
     public async Task GivenIAmOnTheChatAsAAgentOrCustomer()
     {
-        await _page.GotoAsync("http://localhost:3000/chat/1c0fc44d-7eb1-4630-b5fa-3e1e8d699fe9");
+        await _page.GotoAsync("http://localhost:3000/chat/50acfe6e-84b3-4268-9465-a44c02ba661f");
     }
 
     [When(@"I enter ""(.*)"" as my username")]
