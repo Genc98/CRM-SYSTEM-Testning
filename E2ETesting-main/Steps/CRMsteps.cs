@@ -150,8 +150,8 @@ public class CRMsteps
     
     // TEST AGENT WORKFLOW 
 
-    [Given(@"I am logged in as agent and am in the dashboard")]
-    public async Task GivenIAmLoggedInAsAgentAndAmInTheDashboard()
+    [Given(@"I am logged in as agent and I am in the dashboard")]
+    public async Task GivenIAmLoggedInAsAgentAndIAmInTheDashboard()
     {
         await _page.GotoAsync("http://localhost:3000/dashboard");
     }
@@ -186,8 +186,8 @@ public class CRMsteps
     
     
     //TEST CHANGE PASSWORD FOR NEW AGENTS
-    [Given(@"I am a new agent and I am on the change password page that i recived from my email")]
-    public async Task GivenIAmANewAgentAndIAmOnTheChangePasswordPageThatIRecivedFromMyEmail()
+    [Given(@"I am a new agent and I am on the change password page")]
+    public async Task GivenIAmANewAgentAndIAmOnTheChangePasswordPage()
     {
         await _page.GotoAsync("http://localhost:3000/changepassword");
     }
@@ -288,14 +288,14 @@ public class CRMsteps
     }
     
     //TEST IF ADMIN CAN EDIT AGENT DATA
-    [When(@"I press the edit button for specific agent")]
+    [When(@"I press the edit button for specific agent and edit form will show up")]
     public async Task WhenIPressTheEditButtonForSpecificAgent()
     {
         await _page.WaitForSelectorAsync("tr:has-text('Ted')");
         await _page.ClickAsync("tr:has-text('Ted') .edit-button");
     }
     
-    [Then(@"I want update an agents data to '(.*)','(.*)','(.*)', '(.*)' as press save")]
+    [Then(@"I want update an agents data to '(.*)','(.*)','(.*)', '(.*)' and press save")]
     public async Task ThenIWantUpdateAnAgentsDataToAsPressSave(string newFirstname, string newLastname, string newEmail, string newPassword)
     {
         var editForm = await _page.QuerySelectorAsync(".EditArea");
@@ -327,8 +327,8 @@ public class CRMsteps
     }
     
     //TEST IF ADMIN CAN SE ALL HANDLED AND UNHANDLED REQUESTS AND DELETE ONE
-    [When(@"I click the navbar and I click on list and see the list")]
-    public async Task WhenIClickTheNavbarAndIClickOnList()
+    [When(@"I click the navbar and I click on list and I will be redirected to list page")]
+    public async Task WhenIClickTheNavbarAndIClickOnListAndIWillBeRedirectedToListPage()
     {
         await _page.ClickAsync(".navbar-toggler");
 
@@ -338,8 +338,8 @@ public class CRMsteps
         );
     }
 
-    [Then(@"I click on delete to remove a handled ärende for ""(.*)""")]
-    public async Task ThenIClickOnDeleteToRemoveAHandledArende(string productName)
+    [Then(@"I click on delete to remove a handled ärende with ""(.*)"" as productname")]
+    public async Task ThenIClickOnDeleteToRemoveAHandledArendeWithAsProductname(string productName)
     {
         await _page.WaitForSelectorAsync($"tr:has-text('{productName}')");
         await _page.ClickAsync($"tr:has-text('{productName}') button:has-text('Delete')");
@@ -366,12 +366,10 @@ public class CRMsteps
         await _page.FillAsync("input[placeholder='Write your message here']", message);
     }
 
-    [Then(@"I click send and will se my send message")]
-    public async Task WhenIClickSend()
+    [Then(@"I click send and I will see my send message")]
+    public async Task ThenIClickSendAndIWillSeeMySendMessage()
     {
         await _page.ClickAsync("button:has-text('Send')");
     }
-    
-    
     
 }
