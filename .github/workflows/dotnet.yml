@@ -49,4 +49,26 @@ jobs:
       - name: Run GUI-tests
         run: cd E2ETesting-main && dotnet test E2ETesting.csproj
 
+
+
+  deploy:
+    name: Deploy to Server
+    runs-on: ubuntu-latest
+    needs: [api_tests, gui_tests] # Kör endast om alla tidigare tester är OK
+    steps:
+      - name: Deploy App
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: | 
+            cd /srv/www/malmo/genc # första gången
+            cd /srv/www/malmo/genc/CRM-SYSTEM-Testning # andra gången 
+            git clone https://github.com/Genc98/CRM-SYSTEM-Testning.git # första gången
+            git pull # andra gången
+
+    
+
  
