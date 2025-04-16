@@ -7,6 +7,7 @@ Requests list for agents
         And I see the requests I will press join chat
         And I will se a chat for specific request
         And I enter "Sara" as my username
-        And I enter "Hej! Testa gärna att rengöra ytan noggrant innan du sätter upp kroken. Om problemet kvarstår kan vi hjälpa dig med en ersättning – skicka gärna ditt ordernummer. " as my message
-        Then I click send and I will send my message
+        And I enter "Hej! Tack för att du hör av dig. Det låter inte som det ska – skicka gärna ditt ordernummer så hjälper vi dig att lösa det!" as my message
+        And I click send 
+        Then I will se my sent message 
        

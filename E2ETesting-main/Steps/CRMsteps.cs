@@ -146,6 +146,8 @@ public class CRMsteps
         var heading = await _page.InnerTextAsync("h1");
         Assert.Equal("Welcome to our CRM-System ", heading);
     }
+    
+    
 
     
     // TEST AGENT WORKFLOW 
@@ -172,8 +174,8 @@ public class CRMsteps
     public async Task WhenISeeTheRequestsIWillPressJoinChat()
     {
         
-        await _page.WaitForSelectorAsync("tr:has-text('Väggkrok')");
-        await _page.ClickAsync("tr:has-text('Väggkrok') button:has-text('Join')");
+        await _page.WaitForSelectorAsync("tr:has-text('Handduk')");
+        await _page.ClickAsync("tr:has-text('Handduk') button:has-text('Join')");
         
     }
 
@@ -212,6 +214,8 @@ public class CRMsteps
             _page.ClickAsync("button:has-text('Change Password')"));
         
     }
+    
+    //Change of password went correctly
 
     [Then(@"I will get a message below")]
     public async Task ThenIWillGetAMessageBelow()
@@ -222,11 +226,32 @@ public class CRMsteps
 
     }
     
+    //ERROR message will show upp that all field are requiered
+    
+    [Then(@"I will get a message below that email and password are required")]
+    public async Task ThenIWillGetAMessageBelowThatEmailAndPasswordAreRequired()
+    {
+        var heading = await _page.InnerTextAsync("p");
+        Assert.Equal("You need to enter email and your new password", heading);
+    }
+    
+    //ERROR message that account doesn´t exist
+    
+    [Then(@"I will get a fail message below")]
+    public async Task ThenIWillGetAFailMessageBelow()
+    {
+        var heading = await _page.InnerTextAsync("p");
+        Assert.Equal("Fail", heading);
+    }
+    
+    
     [Given(@"I am logged in as admin and I am in the adminpage")]
     public async Task GivenIAmLoggedInAsAdminAndIAmInTheAdminpagen()
     {
         await _page.GotoAsync("http://localhost:3000/adminPage");
     }
+    
+    //ADMIN WORKFLOW
 
     [When(@"I click the navbar and I click on agentlist")]
     public async Task WhenIClickTheNavbarAndIClickOnAgentlist()
@@ -286,16 +311,23 @@ public class CRMsteps
         await _page.WaitForSelectorAsync("tbody tr");
 
     }
+    //ERROR message will show up if you don´t fill all fields
+    [Then(@"I will get a error message to fill all fields")]
+    public async Task ThenIWillGetAErrorMessageToFillAllFields()
+    {
+        var heading = await _page.InnerTextAsync(".error-message");
+        Assert.Equal("Please fill in all fields.", heading);
+    }
     
     //TEST IF ADMIN CAN EDIT AGENT DATA
     [When(@"I press the edit button for specific agent and edit form will show up")]
     public async Task WhenIPressTheEditButtonForSpecificAgent()
     {
-        await _page.WaitForSelectorAsync("tr:has-text('Ted')");
-        await _page.ClickAsync("tr:has-text('Ted') .edit-button");
+        await _page.WaitForSelectorAsync("tr:has-text('Molly')");
+        await _page.ClickAsync("tr:has-text('Molly') .edit-button");
     }
     
-    [Then(@"I want update an agents data to '(.*)','(.*)','(.*)', '(.*)' and press save")]
+    [Then(@"I want to update an agents data to '(.*)','(.*)','(.*)', '(.*)' and press save")]
     public async Task ThenIWantUpdateAnAgentsDataToAsPressSave(string newFirstname, string newLastname, string newEmail, string newPassword)
     {
         var editForm = await _page.QuerySelectorAsync(".EditArea");
@@ -351,7 +383,7 @@ public class CRMsteps
     [Given(@"I am on the Chat as a agent or customer")]
     public async Task GivenIAmOnTheChatAsAAgentOrCustomer()
     {
-        await _page.GotoAsync("http://localhost:3000/chat/c78fa619-0134-4503-869b-77ad8d2d760a");
+        await _page.GotoAsync("http://localhost:3000/chat/ab86427e-8f78-4503-9cd1-91e132ac0acd");
     }
 
     [When(@"I enter ""(.*)"" as my username")]
@@ -366,9 +398,19 @@ public class CRMsteps
         await _page.FillAsync("input[placeholder='Write your message here']", message);
     }
 
-    [Then(@"I click send and I will send my message")]
+    [When(@"I click send")]
     public async Task WhenIClickSend()
     {
         await _page.ClickAsync("button:has-text('Send')");
     }
+
+
+    [Then(@"I will se my sent message")]
+    public async Task ThenIWillSeMySentMessage()
+    {
+        var heading = await _page.InnerTextAsync("h6");
+        Assert.NotNull(heading);
+    }
+
+    
 }
