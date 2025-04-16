@@ -3,9 +3,9 @@ Feature: Send Form
 
 Scenario: Send Forms
 	Given I am on the CRM system startpage
-	When I enter "Anna@hotmail.com" as the email
-	And I enter "Diskborste" as the service_product
-	And I enter "Hej, diskborsten jag fick gick sönder efter bara ett par användningar. Borsten lossnade från handtaget. Kan jag få en ny?" as the message
+	When I enter "Ingrid@hotmail.com" as the email
+	And I enter "Handduk" as the service_product
+	And I enter "Hej, handduken jag beställde fäller mycket färg vid tvätt och torkar dåligt. Är det normalt eller kan jag byta den?" as the message
 	And I send the form
 	Then I will get a confirmation that a confirmation email has been send
 
